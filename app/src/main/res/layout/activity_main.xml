@@ -17,14 +17,14 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:onClick="drawerLayout"
-        android:text="DrawerLayout"
+        android:onClick="collapsingToolbar"
+        android:text="CollapsingToolbar"
         android:textAllCaps="false" />
 
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:onClick="collapsingToolbar"
-        android:text="CollapsingToolbar"
+        android:onClick="drawerLayout"
+        android:text="DrawerLayout"
         android:textAllCaps="false" />
 </LinearLayout>
