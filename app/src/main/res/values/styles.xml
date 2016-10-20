@@ -14,6 +14,9 @@
 
     <style name="Toolbar">
         <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="TabLayout">
         <item name="colorAccent">#FFFFFF</item>
     </style>
 </resources>
