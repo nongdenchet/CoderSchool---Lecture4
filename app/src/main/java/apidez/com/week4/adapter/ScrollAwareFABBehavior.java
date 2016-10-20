@@ -1,5 +1,6 @@
 package apidez.com.week4.adapter;
 
+import android.animation.Animator;
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -39,16 +40,56 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
                     .translationYBy(child.getHeight() * 2)
                     .setDuration(300)
                     .setInterpolator(new DecelerateInterpolator())
+                    .setListener(new Animator.AnimatorListener() {
+                        @Override
+                        public void onAnimationStart(Animator animation) {
+
+                        }
+
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            hide = true;
+                        }
+
+                        @Override
+                        public void onAnimationCancel(Animator animation) {
+
+                        }
+
+                        @Override
+                        public void onAnimationRepeat(Animator animation) {
+
+                        }
+                    })
                     .start();
-            hide = true;
         } else if (dyConsumed < 0 && hide) {
             // User scrolled up and the FAB is currently not visible -> show the FAB
             child.animate()
                     .translationYBy(child.getHeight() * -2)
                     .setDuration(300)
                     .setInterpolator(new AccelerateInterpolator())
+                    .setListener(new Animator.AnimatorListener() {
+                        @Override
+                        public void onAnimationStart(Animator animation) {
+
+                        }
+
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            hide = false;
+                        }
+
+                        @Override
+                        public void onAnimationCancel(Animator animation) {
+
+                        }
+
+                        @Override
+                        public void onAnimationRepeat(Animator animation) {
+
+                        }
+                    })
                     .start();
-            hide = false;
         }
     }
 }
