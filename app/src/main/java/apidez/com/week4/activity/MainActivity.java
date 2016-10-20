@@ -19,15 +19,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, TabLayoutActivity.class));
     }
 
-    public void viewPager(View view) {
-
-    }
-
     public void drawerLayout(View view) {
-
     }
 
     public void collapsingToolbar(View view) {
-
     }
 }

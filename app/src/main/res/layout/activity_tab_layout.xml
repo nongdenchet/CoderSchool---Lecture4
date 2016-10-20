@@ -20,16 +20,33 @@
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabLayout"
-            android:theme="@style/TabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
+            android:theme="@style/TabLayout"
+            app:tabGravity="fill"
             app:tabMode="fixed" />
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/indicator" />
+
+        <github.chenupt.springindicator.SpringIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            app:siIndicatorColor="@color/colorPrimary"
+            app:siSelectedTextColor="@android:color/white"
+            app:siTextColor="@color/colorPrimaryDark"
+            app:siTextSize="18sp" />
+    </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

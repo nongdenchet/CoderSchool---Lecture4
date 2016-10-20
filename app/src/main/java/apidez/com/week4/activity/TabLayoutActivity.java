@@ -11,6 +11,7 @@ import apidez.com.week4.R;
 import apidez.com.week4.adapter.SimplePageAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import github.chenupt.springindicator.SpringIndicator;
 
 public class TabLayoutActivity extends AppCompatActivity {
     private static String POSITION = "POSITION";
@@ -24,6 +25,9 @@ public class TabLayoutActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
+
+    @BindView(R.id.indicator)
+    SpringIndicator indicator;
 
     @SuppressWarnings("ConstantConditions")
     @Override
@@ -40,6 +44,7 @@ public class TabLayoutActivity extends AppCompatActivity {
         // Setup ViewPager
         mPageAdapter = new SimplePageAdapter(getSupportFragmentManager(), this);
         viewPager.setAdapter(mPageAdapter);
+        indicator.setViewPager(viewPager);
 
         // Setup Tablayout
         tabLayout.setupWithViewPager(viewPager);

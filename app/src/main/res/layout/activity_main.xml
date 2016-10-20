@@ -17,13 +17,6 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:onClick="viewPager"
-        android:text="ViewPager"
-        android:textAllCaps="false" />
-
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
         android:onClick="drawerLayout"
         android:text="DrawerLayout"
         android:textAllCaps="false" />

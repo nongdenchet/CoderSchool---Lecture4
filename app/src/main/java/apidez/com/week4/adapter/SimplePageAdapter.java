@@ -42,7 +42,7 @@ public class SimplePageAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return mTitles[position];
+        return String.valueOf(position);
     }
 
     public View getTabView(int position) {
