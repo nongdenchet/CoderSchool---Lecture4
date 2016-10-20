@@ -17,14 +17,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.TabLayoutActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".activity.CollapsingToolbarActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".activity.DrawerLayoutActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 </manifest>

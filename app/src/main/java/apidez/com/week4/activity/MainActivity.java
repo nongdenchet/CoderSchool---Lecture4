@@ -1,6 +1,5 @@
 package apidez.com.week4.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,14 +15,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tabLayout(View view) {
-        startActivity(new Intent(this, TabLayoutActivity.class));
     }
 
     public void collapsingToolbar(View view) {
-        startActivity(new Intent(this, CollapsingToolbarActivity.class));
     }
 
     public void drawerLayout(View view) {
-        startActivity(new Intent(this, DrawerLayoutActivity.class));
     }
 }
