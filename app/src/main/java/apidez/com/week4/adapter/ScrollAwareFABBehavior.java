@@ -16,6 +16,7 @@ import android.view.animation.DecelerateInterpolator;
 
 public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
     private boolean hide = false;
+    private boolean animating = false;
 
     public ScrollAwareFABBehavior(Context context, AttributeSet attrs) {
         super();
@@ -34,6 +35,7 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
                                final View target, final int dxConsumed, final int dyConsumed,
                                final int dxUnconsumed, final int dyUnconsumed) {
         super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
+        if (animating) return;
         if (dyConsumed > 0 && !hide) {
             // User scrolled down and the FAB is currently visible -> hide the FAB
             child.animate()
@@ -43,12 +45,13 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
                     .setListener(new Animator.AnimatorListener() {
                         @Override
                         public void onAnimationStart(Animator animation) {
-
+                            animating = true;
                         }
 
                         @Override
                         public void onAnimationEnd(Animator animation) {
                             hide = true;
+                            animating = false;
                         }
 
                         @Override
@@ -71,12 +74,13 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
                     .setListener(new Animator.AnimatorListener() {
                         @Override
                         public void onAnimationStart(Animator animation) {
-
+                            animating = true;
                         }
 
                         @Override
                         public void onAnimationEnd(Animator animation) {
                             hide = false;
+                            animating = false;
                         }
 
                         @Override
