@@ -23,4 +23,7 @@
     <style name="FloatingActionButton">
         <item name="colorAccent">@color/colorPrimary</item>
     </style>
+
+    <style name="AppTheme.Transculent" parent="AppTheme.NoActionBar">
+    </style>
 </resources>

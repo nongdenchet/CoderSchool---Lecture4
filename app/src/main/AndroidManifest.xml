@@ -10,14 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".activity.MainActivity">
-        </activity>
+        <activity android:name=".activity.MainActivity" />
         <activity
             android:name=".activity.TabLayoutActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CollapsingToolbarActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.Transculent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

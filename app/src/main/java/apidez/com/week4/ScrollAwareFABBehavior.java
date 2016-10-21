@@ -8,6 +8,7 @@ import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
 
 /**
  * Created by nongdenchet on 10/21/16.
@@ -62,7 +63,7 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
             child.animate()
                     .translationYBy(child.getHeight() * 2)
                     .setDuration(300)
-                    .setInterpolator(new AccelerateInterpolator())
+                    .setInterpolator(new DecelerateInterpolator())
                     .setListener(animatorListener)
                     .start();
             hidden = true;
