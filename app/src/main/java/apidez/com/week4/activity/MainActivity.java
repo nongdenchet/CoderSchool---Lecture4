@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import apidez.com.week4.CollapsingToolbarActivity;
+import apidez.com.week4.DrawerActivity;
 import apidez.com.week4.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void drawerLayout(View view) {
+        Intent intent = new Intent(this, DrawerActivity.class);
+        startActivity(intent);
     }
 }

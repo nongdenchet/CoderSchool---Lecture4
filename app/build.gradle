@@ -30,5 +30,6 @@ dependencies {
     compile 'com.github.chenupt.android:springindicator:1.0.2@aar'
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
     testCompile 'junit:junit:4.12'
 }

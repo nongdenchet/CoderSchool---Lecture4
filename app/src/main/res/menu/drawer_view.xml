@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_walk"
+            android:icon="@drawable/ic_walk"
+            android:title="Walk" />
+        <item
+            android:id="@+id/action_car"
+            android:icon="@drawable/ic_car"
+            android:title="Car" />
+        <item
+            android:id="@+id/action_bus"
+            android:icon="@drawable/ic_bus"
+            android:title="Bus" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/action_transit"
+                    android:icon="@drawable/ic_transit"
+                    android:title="Transit" />
+                <item
+                    android:id="@+id/action_flight"
+                    android:icon="@drawable/ic_flight"
+                    android:title="Flight" />
+            </group>
+        </menu>
+    </item>
+</menu>
