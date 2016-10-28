@@ -1,4 +1,4 @@
-package apidez.com.week4.adapter;
+package apidez.com.week4;
 
 import android.annotation.SuppressLint;
 import android.support.v7.widget.RecyclerView;

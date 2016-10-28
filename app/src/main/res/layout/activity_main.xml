@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="apidez.com.week4.activity.MainActivity">
+    tools:context="apidez.com.week4.MainActivity">
 
     <Button
         android:layout_width="200dp"
@@ -26,5 +26,12 @@
         android:layout_height="wrap_content"
         android:onClick="drawerLayout"
         android:text="DrawerLayout"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="bottomSheet"
+        android:text="BottomSheet"
         android:textAllCaps="false" />
 </LinearLayout>

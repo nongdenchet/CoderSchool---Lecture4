@@ -1,13 +1,9 @@
-package apidez.com.week4.activity;
+package apidez.com.week4;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
-import apidez.com.week4.CollapsingToolbarActivity;
-import apidez.com.week4.DrawerActivity;
-import apidez.com.week4.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void drawerLayout(View view) {
         Intent intent = new Intent(this, DrawerActivity.class);
+        startActivity(intent);
+    }
+
+    public void bottomSheet(View view) {
+        Intent intent = new Intent(this, BottomSheetActivity.class);
         startActivity(intent);
     }
 }

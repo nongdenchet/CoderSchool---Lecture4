@@ -10,7 +10,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Window;
 import android.view.WindowManager;
 
-import apidez.com.week4.adapter.UserAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

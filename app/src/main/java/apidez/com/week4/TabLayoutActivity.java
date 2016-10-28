@@ -1,4 +1,4 @@
-package apidez.com.week4.activity;
+package apidez.com.week4;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
