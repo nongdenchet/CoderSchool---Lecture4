@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,13 +18,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.TabLayoutActivity"
+            android:name=".TabLayoutActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.CollapsingToolbarActivity"
+            android:name=".CollapsingToolbarActivity"
+            android:theme="@style/AppTheme.Transculent" />
+        <activity
+            android:name=".DrawerActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.DrawerLayoutActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".BottomSheetActivity"
+            android:label="BottomSheet" />
     </application>
 </manifest>
