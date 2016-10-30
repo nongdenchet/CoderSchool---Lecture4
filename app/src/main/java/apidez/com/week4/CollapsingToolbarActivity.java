@@ -1,7 +1,6 @@
 package apidez.com.week4;
 
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -13,9 +12,6 @@ public class CollapsingToolbarActivity extends AppCompatActivity {
 
     @BindView(R.id.rvUsers)
     RecyclerView rvUsers;
-
-    @BindView(R.id.appBar)
-    AppBarLayout appBarLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
