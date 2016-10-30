@@ -22,7 +22,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CollapsingToolbarActivity"
-            android:theme="@style/AppTheme.Transculent" />
+            android:theme="@style/AppTheme.TransculentStatusBar" />
         <activity
             android:name=".DrawerActivity"
             android:theme="@style/AppTheme.NoActionBar" />

@@ -24,7 +24,7 @@
         <item name="colorAccent">@color/colorPrimary</item>
     </style>
 
-    <style name="AppTheme.Transculent" parent="AppTheme.NoActionBar"></style>
+    <style name="AppTheme.TransculentStatusBar" parent="AppTheme.NoActionBar" />
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
