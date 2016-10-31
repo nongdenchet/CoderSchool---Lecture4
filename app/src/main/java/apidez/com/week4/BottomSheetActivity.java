@@ -18,10 +18,8 @@ public class BottomSheetActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_bottom_sheet);
         Button button1 = (Button) findViewById(R.id.button_1);
         Button button2 = (Button) findViewById(R.id.button_2);
-        Button button3 = (Button) findViewById(R.id.button_3);
         button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
-        button3.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 BottomSheetDialogFragment bottomSheetDialogFragment = new MyDialogFragment();
