@@ -58,7 +58,7 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
         super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed,
                 dyUnconsumed);
         if (animating) return;
-        if (dyConsumed > 0 && !hidden) {
+        if (dyConsumed > 32 && !hidden) {
             // Hide
             child.animate()
                     .translationYBy(child.getHeight() * 2)
@@ -67,7 +67,7 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
                     .setListener(animatorListener)
                     .start();
             hidden = true;
-        } else if (dyConsumed < 0 && hidden) {
+        } else if (dyConsumed < -32 && hidden) {
             // Show
             child.animate()
                     .translationYBy(child.getHeight() * -2)

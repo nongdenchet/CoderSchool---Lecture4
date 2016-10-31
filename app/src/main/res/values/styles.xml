@@ -24,9 +24,9 @@
         <item name="colorAccent">@color/colorPrimary</item>
     </style>
 
+    <style name="AppBarTheme">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
     <style name="AppTheme.TransculentStatusBar" parent="AppTheme.NoActionBar" />
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
