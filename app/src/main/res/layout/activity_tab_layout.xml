@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:theme="@style/TabLayout"
+            app:tabIndicatorColor="@android:color/white"
             app:tabMode="fixed" />
     </android.support.design.widget.AppBarLayout>
 

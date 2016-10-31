@@ -16,14 +16,6 @@
         <item name="android:textColorSecondary">#FFFFFF</item>
     </style>
 
-    <style name="TabLayout">
-        <item name="colorAccent">#FFFFFF</item>
-    </style>
-
-    <style name="FloatingActionButton">
-        <item name="colorAccent">@color/colorPrimary</item>
-    </style>
-
     <style name="AppBarTheme">
         <item name="android:textColorPrimary">#FFFFFF</item>
     </style>

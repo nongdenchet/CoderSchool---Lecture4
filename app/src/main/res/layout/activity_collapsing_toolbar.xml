@@ -68,11 +68,11 @@
         android:layout_margin="16dp"
         android:clickable="true"
         android:src="@drawable/ic_bus"
+        app:backgroundTint="@color/colorPrimary"
         app:elevation="8dp"
         app:fabSize="normal"
         app:layout_anchor="@+id/rvUsers"
         app:layout_anchorGravity="bottom|end|right"
         app:layout_behavior="apidez.com.week4.ScrollAwareFABBehavior"
-        app:rippleColor="#50ffffff"
-        app:theme="@style/FloatingActionButton" />
+        app:rippleColor="#50ffffff" />
 </android.support.design.widget.CoordinatorLayout>
