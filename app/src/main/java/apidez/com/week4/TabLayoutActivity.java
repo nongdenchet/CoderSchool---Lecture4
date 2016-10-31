@@ -25,9 +25,6 @@ public class TabLayoutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_layout);
-//        getSupportFragmentManager().beginTransaction()
-//                .replace(R.id.activity_tab_layout, SimpleFragment.newInstance("Manta"))
-//                .commit();
 
         // Toolbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);

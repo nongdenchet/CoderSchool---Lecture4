@@ -26,8 +26,6 @@
         <activity
             android:name=".DrawerActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".BottomSheetActivity"
-            android:label="BottomSheet" />
+        <activity android:name=".BottomSheetActivity" />
     </application>
 </manifest>
