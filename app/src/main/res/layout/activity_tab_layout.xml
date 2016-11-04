@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_tab_layout"
@@ -12,7 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <include layout="@layout/toolbar" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Toolbar"
+            app:title="Tab Layout" />
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tablayout"
@@ -23,20 +30,53 @@
             app:tabMode="fixed" />
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/indicator"
-        android:layout_below="@+id/appBar" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <github.chenupt.springindicator.SpringIndicator
-        android:id="@+id/indicator"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
-        app:siIndicatorColor="@color/colorPrimary"
-        app:siSelectedTextColor="@android:color/white"
-        app:siTextColor="@color/colorPrimaryDark"
-        app:siTextSize="18sp" />
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="256dp" />
+
+            <github.chenupt.springindicator.SpringIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:siIndicatorColor="@color/colorPrimary"
+                app:siSelectedTextColor="@android:color/white"
+                app:siTextColor="@color/colorPrimaryDark"
+                app:siTextSize="18sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
