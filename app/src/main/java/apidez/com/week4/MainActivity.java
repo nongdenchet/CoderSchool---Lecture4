@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BottomSheetActivity.class);
         startActivity(intent);
     }
+
+    public void bottomNav(View view) {
+        Intent intent = new Intent(this, BottomNavActivity.class);
+        startActivity(intent);
+    }
 }
